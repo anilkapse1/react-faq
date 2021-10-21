@@ -99,10 +99,10 @@ const Test7=()=>{
         <Snackbar
           anchorOrigin={{
             vertical: "bottom",
-            horizontal: "left",
+            horizontal: "center",
           }}
           open={open}
-          autoHideDuration={1000}
+          autoHideDuration={2000}
           onClose={handleClose}
           message="faq added successfully"
           action={
