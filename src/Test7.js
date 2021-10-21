@@ -24,14 +24,20 @@ const Test7=()=>{
 
 
     const getVal=()=>{
-        setFullData((pre)=>{
-            return [...pre,data];
-        })
-
-        fullData({
-            question:'',
-            ans:''
-        })
+        if(!Object.values(data).some(x => x ===null || x ==='')){
+            setFullData((pre)=>{
+                return [...pre,data];
+            })
+    
+            fullData({
+                question:'',
+                ans:''
+            })
+        }
+        else{
+            alert('please add the value');
+            return false;
+        }
     }
 
     return(
